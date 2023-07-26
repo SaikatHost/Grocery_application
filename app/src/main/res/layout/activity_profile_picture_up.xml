@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bc1"
+    tools:context=".profile_picture_up">
+
+    <Button
+        android:id="@+id/pro_back"
+        android:layout_width="27dp"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+
+        android:background="@drawable/backicon"
+        android:paddingLeft="2dp"
+        app:cornerRadius="@android:dimen/app_icon_size"
+        app:icon="@drawable/backicon" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="150dp"
+            android:src="@drawable/profile"
+            app:civ_border_color="#FFFFFFFF"
+            app:civ_border_width="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addImgBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="@+id/profile_image"
+            app:layout_constraintEnd_toEndOf="@+id/profile_image"
+            app:srcCompat="@drawable/add_floting" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/profile_image"
+            tools:layout_editor_absoluteX="16dp">
+
+            <TextView
+                android:id="@+id/nameShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/proUpdate"
+            android:layout_width="204dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:backgroundTint="@color/teal_200"
+            android:gravity="center"
+            android:text="Update Profile Picture"
+            android:textColor="@color/black"
+            android:textColorHint="@color/teal_200"
+            android:textSize="14sp"
+            android:textStyle="bold|italic"
+            app:cornerRadius="@android:dimen/app_icon_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/skip_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="124dp"
+            android:layout_marginEnd="60dp"
+            android:backgroundTint="@color/white"
+            android:text="Skip>>"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/proUpdate" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>

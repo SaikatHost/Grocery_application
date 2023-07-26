@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".logoutpage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#47837D"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/pro_back"
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:background="@android:color/transparent"
+                android:backgroundTint="#acb6e5"
+                android:padding="9dp"
+                app:cornerRadius="@android:dimen/app_icon_size"
+                app:icon="@drawable/backicon" />
+
+            <TextView
+                android:id="@+id/pro_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Profile"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/updatebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#35C0FF"
+                android:gravity="left"
+                android:text="UPDATE PROFILE"
+                android:textColor="#E8F4DA"
+                android:textSize="15sp"
+                android:textStyle="bold|italic"
+                app:cornerRadius="@android:dimen/app_icon_size" />
+
+            <Button
+                android:id="@+id/deletebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#EF0808"
+                android:gravity="left"
+                android:text="DELETE ACCOUNT"
+                android:textColor="#D0FAA0"
+                android:textSize="15sp"
+                android:textStyle="bold|italic"
+                app:cornerRadius="@android:dimen/app_icon_size" />
+
+        </LinearLayout>-->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbarSize="10dp">
+
+            <LinearLayout
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#6310F6"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <!--<ImageView
+                    android:id="@+id/pro_img"
+                    android:layout_width="254dp"
+                    android:layout_height="173dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/saikat2"
+                    android:clickable="false"
+                    android:paddingTop="15dp" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingRight="10dp"
+                    android:text="Name:-"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/pro_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/profile_details_border"
+                    android:padding="10dp"
+                    android:text="Saikat Mondal"
+                    android:textSize="18sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingRight="10dp"
+                    android:text="Email Address:-"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/pro_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/profile_details_border"
+                    android:padding="10dp"
+                    android:text="saikat001@gmail.com"
+                    android:textSize="18sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingRight="10dp"
+                    android:text="Phone No:-"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/pro_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/profile_details_border"
+                    android:padding="10dp"
+                    android:text="7063464588"
+                    android:textSize="18sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingRight="10dp"
+                    android:text="Address:-"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/pro_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/profile_details_border"
+                    android:padding="10dp"
+                    android:text="Ghatal"
+                    android:textSize="18sp"
+                    android:textStyle="italic" />
+
+                <Button
+                    android:id="@+id/logout"
+                    android:layout_width="244dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:text="log out"
+                    android:textSize="20sp"
+                    android:textStyle="bold|italic"
+                    app:cornerRadius="@android:dimen/app_icon_size" />-->
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/show_image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/profile"
+                    app:civ_border_color="#FFFFFFFF"
+                    app:civ_border_width="3dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/pro_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Grocery Online"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pro_email"
+                        android:layout_width="261dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="60dp"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="grocery_online@gmail.com"
+                        android:textColor="@color/white"
+                        android:textStyle="italic" />
+
+                    <Button
+                        android:id="@+id/updatebtn"
+                        android:layout_width="31dp"
+                        android:layout_height="43dp"
+                        android:padding="10dp"
+                        app:icon="@drawable/update_pro" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bc1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+
+                    android:background="#FFFFFF"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/orders"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:padding="10dp"
+                        android:text="Your Orders:-" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/orders_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/reg"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/reviews"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:padding="10dp"
+                        android:text="Your Reviews:-" />
+
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp">
+
+                    </ListView>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/logout"
+                    android:layout_width="244dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="#EC1717"
+                    android:padding="10dp"
+                    android:text="log out"
+                    android:textSize="20sp"
+                    android:textStyle="bold|italic"
+                    app:cornerRadius="@android:dimen/app_icon_size" />
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

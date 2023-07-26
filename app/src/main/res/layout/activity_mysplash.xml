@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".mysplash">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="670dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/splashimg2"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/bc1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="GROCERY_ONLINE"
+            android:textColor="@color/yel"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            app:cornerRadius="@android:dimen/app_icon_size" />
+    </LinearLayout>
+</RelativeLayout>

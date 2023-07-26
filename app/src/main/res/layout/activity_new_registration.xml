@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bc1"
+    tools:context=".new_registration">
+
+    <Button
+        android:id="@+id/pro_back"
+        android:layout_width="27dp"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+
+        android:background="@drawable/backicon"
+        android:paddingLeft="2dp"
+        app:cornerRadius="@android:dimen/app_icon_size"
+        app:icon="@drawable/backicon" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/reg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Sign Up"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/underline"
+                    android:drawableLeft="@drawable/email"
+                    android:hint="Enter Email Address"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/underline"
+                    android:drawableLeft="@drawable/name"
+                    android:hint="Enter Your Name"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/mno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/underline"
+                    android:drawableLeft="@drawable/phone"
+                    android:hint="Enter Contact No"
+                    android:inputType="phone"
+                    android:padding="10dp"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/underline"
+                    android:drawableLeft="@drawable/pass"
+                    android:hint="Enter Password"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/conpass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/underline"
+                    android:drawableLeft="@drawable/pass"
+                    android:hint="Re-Type password"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/underline"
+                    android:drawableLeft="@drawable/add"
+                    android:hint="Enter Address with PIN Code"
+                    android:inputType="textMultiLine"
+                    android:padding="10dp"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/regBtn"
+                    android:layout_width="204dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="@color/teal_200"
+                    android:gravity="center"
+                    android:text="REGISTER"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/teal_200"
+                    android:textSize="20dp"
+                    android:textStyle="bold|italic"
+                    app:cornerRadius="@android:dimen/app_icon_size" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>
